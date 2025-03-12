@@ -2,6 +2,8 @@
 
 ## Descripción
 Pokedex App es una aplicación desarrollada con Next.js que muestra una lista de Pokémon obtenida desde la API pública de [PokeAPI](https://pokeapi.co/). Utiliza Axios para realizar las solicitudes a la API y presenta los datos con React y Tailwind CSS.
+![image](https://github.com/user-attachments/assets/4394a34e-d31e-4cdd-b334-87b5f1014a14)
+
 
 ## Tecnologías Utilizadas
 - **Next.js** (15.2.2)
