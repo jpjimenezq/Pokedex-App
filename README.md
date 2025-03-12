@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pokedex App
 
-## Getting Started
+## Descripción
+Pokedex App es una aplicación desarrollada con Next.js que muestra una lista de Pokémon obtenida desde la API pública de [PokeAPI](https://pokeapi.co/). Utiliza Axios para realizar las solicitudes a la API y presenta los datos con React y Tailwind CSS.
 
-First, run the development server:
+## Tecnologías Utilizadas
+- **Next.js** (15.2.2)
+- **React** (19.0.0)
+- **Axios** (1.8.2)
+- **Tailwind CSS**
+- **Framer Motion**
+- **Three.js** (para efectos en 3D)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Estructura del Proyecto
+```
+/src
+ ├── app
+ │   ├── favicon.ico
+ │   ├── globals.css
+ │   ├── layout.tsx
+ │   ├── page.tsx
+ │
+ ├── components
+ │   ├── Border.jsx
+ │   ├── CardPokemon.jsx
+ │   ├── Content.jsx
+ │   ├── Hero.jsx
+ │   ├── PixelTrail.jsx
+ │
+ ├── services
+ │   ├── api.js
+ │
+ ├── .env
+ ├── .gitignore
+ ├── package.json
+ ├── tsconfig.json
+ ├── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instalación y Uso
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/jpjimenezq/Pokedex-App
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Ingresa al directorio del proyecto:
+   ```bash
+   cd pokedex-app
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
 
-## Learn More
+4. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+5. Accede a la aplicación en `http://localhost:3000`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## API
+La aplicación obtiene los datos de Pokémon desde [PokeAPI](https://pokeapi.co/). Para realizar las solicitudes HTTP se utiliza la librería Axios.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contacto
+Si tienes preguntas o sugerencias, puedes abrir un issue en el repositorio. ¡Disfruta explorando los Pokémon! 🚀
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
